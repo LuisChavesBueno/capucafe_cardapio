@@ -1,17 +1,5 @@
 let valorTotal = 0;
 
-function detalhes(produtoElement) {
-    const infoProduto = produtoElement.querySelector(".info");
-    const imgProduto = produtoElement.querySelector(".img");
-
-    if (infoProduto.style.display === "block") {
-        infoProduto.style.display = "none";
-        imgProduto.style.display = "block";
-    } else {
-        infoProduto.style.display = "block";
-        imgProduto.style.display = "none";
-    }
-}
 
 function comprar(produtoElement) {
     const precoElement = produtoElement.querySelector(".preco");
@@ -21,7 +9,7 @@ function comprar(produtoElement) {
 
     if (!isNaN(precoNumerico)) {
         valorTotal += precoNumerico;
-        valorElement.textContent = "Valor: " + valorTotal;
+        valorElement.textContent = "Valor: R$"+ valorTotal+",00";
     } else {
         console.error("Preço inválido:", precoTexto);
     }

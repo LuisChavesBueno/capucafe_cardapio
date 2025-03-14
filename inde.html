@@ -9,14 +9,14 @@
 <body>
     <header>
         <div id="cabecalho">
-            <div id="logo">logo</div>
+            <div id="logo"><img width="50" height="50" src="img/logo-removebg-preview.png" alt=""></div>
             <div>CARDAPIO</div>
             <div id="pedidos" onclick="pedidos()">pedidos</div>
         </div>
     </header>
     <main>
         <div>
-            <div id="valor">valor: </div>
+            <div id="valor">Valor: </div>
         </div>
         <div>
             <input type="text" id="pesquisar" onclick="Pesquisar()" placeholder="Pesquisar" size="30">
@@ -24,68 +24,138 @@
     </main>
     <footer>
         <div class="produto">
-            <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident veniam quidem debitis maiores
-                 obcaecati id ducimus cupiditate nulla harum iste architecto, laborum possimus eos animi nobis dolorum adipisci 
-                 sint amet.</div>
-            <div class="img">imagens</div>
+            <img width="230" height="200" src="img/Affogato.webp" alt="" class="img">
             <div class="nomePreco">
-                <p class="nome">Cafe sabor morango</p>
-                <p class="preco">100</p>
-                <div onclick="detalhes(this.parentElement.parentElement)" class="detalhes">ver detalhes</div>
-                <div class="botao">
-                    <div onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                <p class="nome">Affogato</p>
+                <div class="precoConfi">R$<p class="preco">15,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
                 </div>
             </div>
         </div>
         
         
         <div class="produto">
-            <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-                 doloribus sequi? Sit atque voluptas 
-                deserunt neque suscipit tempore accusantium quae maxime! Quidem provident 
-                tempore aliquid in sed 
-                iusto atque excepturi?</div>
-            <div class="img">imagens</div>
+            <img width="230" height="200" src="img/cafe_americano.webp" alt="" class="img">
             <div class="nomePreco">
-                <p class="nome">Cafe sabor morango</p>
-                <p class="preco">50</p>
-                <div onclick="detalhes(this.parentElement.parentElement)" class="detalhes">ver detalhes</div>
-                <div class="botao">
+                <p class="nome">Americano</p>
+                <div class="precoConfi">R$<p class="preco">10,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/cafe_gelado.webp" alt="" class="img">
+            <img src="" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Café Gelado</p>
+                <div class="precoConfi">R$<p class="preco">12,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/cafe_irlandes.jpg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Café Irlandês</p>
+                <div class="precoConfi">R$<p class="preco">20,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/cafe_vienense.jpg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Café Vienense</p>
+                <div class="precoConfi">R$<p class="preco">14,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/Cappuccino.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Cappuccino</p>
+                <div class="precoConfi">R$<p class="preco">12,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="produto">
+            <img width="230" height="200" src="img/Expresso.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Expresso</p>
+                <div class="precoConfi">R$<p class="preco">8,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/Flat_White.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Flat White</p>
+                <div class="precoConfi">R$<p class="preco">13,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/Latte.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Latte (Café com leite)</p>
+                <div class="precoConfi">R$<p class="preco">12,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/Macchiato.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Macchiato</p>
+                <div class="precoConfi">R$<p class="preco">10,00</p></div>
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/Mocha.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Mocha</p>
+                <div class="precoConfi">R$<p class="preco">14,00</p></div>
+                
+            
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="produto">
+            <img width="230" height="200" src="img/Ristretto.jpeg" alt="" class="img">
+            <div class="nomePreco">
+                <p class="nome">Ristretto</p>
+                <div class="precoConfi">R$<p class="preco">9,00</p></div>
+                
                     <div onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
                 </div>
             </div>
         </div>
 
         <div class="produto">
-            <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-                 doloribus sequi? Sit atque voluptas 
-                deserunt neque suscipit tempore accusantium quae maxime! Quidem provident 
-                tempore aliquid in sed 
-                iusto atque excepturi?</div>
-            <div class="img">imagens</div>
+            <img width="230" height="200" src="img/Frappuccio.jpeg" alt="" class="img">
             <div class="nomePreco">
-                <p class="nome">Cafe sabor morango</p>
-                <p class="preco">150</p>
-                <div onclick="detalhes(this.parentElement.parentElement)" class="detalhes">ver detalhes</div>
-                <div class="botao">
-                    <div onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="produto">
-            <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta,
-                 doloribus sequi? Sit atque voluptas 
-                deserunt neque suscipit tempore accusantium quae maxime! Quidem provident 
-                tempore aliquid in sed 
-                iusto atque excepturi?</div>
-            <div class="img">imagens</div>
-            <div class="nomePreco">
-                <p class="nome">Cafe sabor morango</p>
-                <p class="preco">200</p>
-                <div onclick="detalhes(this.parentElement.parentElement)" class="detalhes">ver detalhes</div>
-                <div class="botao">
-                    <div onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
+                <p class="nome">Frappuccio</p>
+                <div class="precoConfi">R$<p class="preco">8,00</p></div>
+                
+                    <div class="botao" onclick="comprar(this.parentElement.parentElement)">PEGAR</div>
                 </div>
             </div>
         </div>
